@@ -1,0 +1,1341 @@
+  <div class="work-section1">
+
+        <div class="work-section-content">
+
+                <p> MOBILE APP DESIGN</p>
+                <h2>UX/UI Design Ramen Rhythm App</h2>
+                <p> This app delivers meals and features Japanese cuisine. The design gains appeal by using black with a little yellow contrast which impose hunger and elegance at the same time.
+                </p>
+        </div>
+     
+
+        <div class="work-item1">
+            <img src="ramen-checkout.png" alt="">
+            <img src="Ramen1.png" alt="">
+            <img src="Ramen3.png" alt="">
+        </div>
+
+
+        <div class="dropShadow1"></div>
+        <div class="dropShadow2"></div>
+        <div class="bg-line"></div>
+
+     
+    </div>
+
+<!-- Section2-->
+
+    <div class="work-section2">
+        <img src="Fit Arc.png" alt="">
+        
+        <div class="work-item2">
+            <img src="PhoneWEb.png" alt="">
+        </div>
+        
+        <div class="s2text-content">
+          
+            <p> RESPONSIVE WEBSITE DESIGN</p>
+            <h2> Architecture Company Website Design</h2>
+            <p>Creating an architecture company website with a red motif that represents speed, passion and love will undoubtedly attract customers.</p>
+        </div>
+    </div>
+
+
+<!-- Section3-->
+    <div class="work-section3">
+        <h1 class="section3-header"> aShop.com</h1>
+        <div class="s3text-content">
+            <h1>Make<br> Ecommerce<br> Website</h1>
+            <p>with simple and direct<br> Layout & Design</p>
+        </div>
+      
+        <div class="work-item3-1">
+            <img src="webanimation.png" alt="">
+        </div>
+    </div>
+   
+
+</div>
+
+
+<!-- Logo Design-Section-->
+ 
+    <section class="primary-portfolio-section">
+
+
+
+        <div class="logo-grid-wrapper">
+
+
+        <div class="main-container-logo-section">
+
+            <div class="logo-main-container">
+            <div class="logo-text-container">
+                <h1>LOGO DESIGN</h1>
+                <p> I can help you create a logo that is both visually appealing and memorable. This will make your company stand out from the competition and attract new customers. I use Adobe Illustrator to design logos that are scalable and can be used on a variety of marketing materials.</p>
+        
+            </div>
+
+        <div class="slideshow-container">
+
+            <!-- images -->
+            <div class="mySlides fade" id="main1">
+             
+              <div class="content omega1">
+                <img src="hangerlogo-01.png" alt="Hanger-logo">
+              </div>
+             
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+             
+              <div class="content omega2">
+                <img src="turtlelogo-01.png" alt="turtle">      
+              </div>
+
+        
+            </div>
+          
+            <div class="mySlides fade">
+            
+              <div class="content omega3"> <img src="musiclogo1-01.png" alt="music"></div>
+              <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+              
+                <div class="content omega4">
+                    <img src="finarclogo-01.png" alt="finarc"></div>
+               
+              </div>
+
+              <div class="mySlides fade">
+            
+                <div class="content omega5">
+                     <img src="ashoplogo-01.png" alt="ashop-logo"></div>
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides fade">
+            
+                <div class="content omega6">
+                    <img src="ramen222-01.png" alt="ramen-logo">
+                </div>
+                <div class="text"></div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+               <!-- The dots -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>     
+          </div>
+
+          </div>
+          <br>
+          
+
+</div>
+    <div class="border-bottom"></div>
+
+</div>
+</div>
+</div>
+
+</section>
+
+
+<!-- Script for carousel-->
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"  ;
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+***********************************************
+ .work-section1{
+
+    width: max(100vw);
+    /* background: rgb(211, 146, 25); */
+    background: transparent;
+    height: 600px;
+    position: relative;
+    margin: 200px auto;
+  }
+
+  .work-item1{
+    position: relative;
+    border-radius: 30px !important;
+    
+  }
+
+.work-item1 :nth-child(1){
+    width: 250px;
+    height: 500px;
+    background-color: transparent;
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    
+  
+  }
+
+  .work-item1 :nth-child(2){
+    width: 200px;
+    aspect-ratio: 1 / 2;
+    background-color: transparent;
+    position: absolute;
+    left: 650px;
+    top: 150px;
+  }
+
+  .work-item1 :nth-child(3){
+    width: 300px;
+    height: 560px;
+    background-color: transparent;
+    position: absolute;
+    left: 900px;
+    top: 100px;
+    
+  }
+
+  .dropShadow1{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    filter: blur(10px);
+    border-radius: 50%;
+    bottom: 10px;
+    left: 420px;
+ 
+  }
+
+  .dropShadow2{
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    background-color: black;
+    filter: blur(10px);
+    border-radius: 50%;
+    bottom: 10px;
+    left: 670px;
+  }
+
+  /* Section-content-1 */
+
+.work-section-content{
+    color: white;
+    position: absolute;
+    max-width: 300px;
+    height: 100%;
+    line-height: 1.5;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work-section-content :nth-child(1){
+    color:var(--clr-adjacent-3);
+    padding-inline: 40px;   
+}
+
+.work-section-content :nth-child(2){
+    padding: 0 0 20px 40px;
+}
+
+.work-section-content :nth-child(3){
+    padding-inline: 40px;
+}
+
+
+/* Section2 */
+
+  .work-section2{
+    width: max(100vw);
+    background-color: white;
+    height: 600px;
+    display: flex;
+    position: relative;
+    margin: 200px auto 0;
+  }
+
+  .work-section2 img{
+    width: 100%;
+  }
+
+  .work-item2{
+    width: 250px;
+    height: 600px;
+    background-color: transparent;
+    position: absolute;
+    left: 2rem;
+    top: 200px;
+    z-index: 1;
+  }
+
+  .s2text-content{
+    position: absolute;
+    height: 50%;
+    color: white;
+    padding: 20px;
+    max-width: 250px;
+    display: block;
+    right: 0;
+    top: 150px;
+    flex-wrap: wrap;
+  }
+
+  .s2text-content h1{
+    margin-bottom: 20px;
+  }
+
+  .s2text-content :nth-child(1){
+    color: var(--clr-adjacent-3);
+    font-size: 15px;
+  }
+
+  
+  .s2text-content :nth-child(2){
+    margin-block: 10px 20px;
+  }
+
+  .s2text-content :nth-child(3){
+    line-height: 1.5
+  }
+
+  /* section3 */
+
+  .work-section3{
+    width: max(100vw );
+    /* background-color: #4481ae; */
+    background: transparent;
+    height: 700px;
+    display: flex;
+    position: relative;
+    margin: 200px auto 0;
+    perspective: 1000px;
+    justify-content: center;
+    color: white;
+    bottom: 0;
+    
+  }
+
+  .section3-header{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: poppins;
+  }
+
+  .s3text-content{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+  }
+
+
+  .s3text-content h1{
+    margin-bottom: 20px;
+  }
+  
+  .s3text-content p{
+    font-style: italic;
+  }
+
+  .work-item3-1{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transform: rotateX(30deg);
+    overflow: hidden;
+    border: 10px solid black;
+    box-shadow: 0px 50px 30px rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+  }
+
+  .work-item3-1 img{
+    width: 500px;
+    height: 1000px;
+    animation: slide-up 10s ease infinite;
+    position: absolute;
+    
+   
+  }
+
+  @keyframes slide-up{
+    0%{transform: translateY(0px);}
+    10%{transform: translateY(0px);}
+    20%{transform: translateY(-300px);}
+    30%{transform: translateY(-300px);}
+    40%{transform: translateY(-500px);}
+    50%{transform: translateY(-500px);}
+    60%{transform: translateY(-700px)}
+    to{transform: translateY(-700px);}
+  }
+
+
+
+
+/* Skills */
+
+
+  <div class="primary-services" id="services-bookmark">
+    <div class="bg-cover"></div>
+    
+                <div class="merketing-service">
+                    <h1> Skills </h1> 
+
+                    <div class="service-1">
+
+                        <div class="service-content">
+                            <h3>Digital Assets</h3>
+                            <p> I can help you market your business utilizing digital ads/marketing design and develop your brand by creating logos.<br>My Specialty:</p>
+
+
+                            <div class="mob-content-1 mob-child"><h4> Logo design</h4></div>
+
+                            <div class="mob-content-2 mob-child"> <h4> Digital Ads</h4></div>
+                            
+                           
+                    
+                        </div>
+
+                        <div class="service-content-1">
+
+                         
+                            <h3>Digital Ads</h3>
+                            <p> With my design I can make you an digiral advertisment that attracts your target demographic for your business.</p>
+                            
+                            <a href="Marketing-Payout.html"> Avail now</a>
+                            <div class="servce-icon"></div>
+                        </div>
+
+                        <div class="service-content-2">
+                          
+                            <h3>Logo Design</h3>
+                            <p> I can help you build your brand by designing the logo or trademark that will enable your company to expand and attract customers.</p>
+                            <a href="#"> Avail now</a>
+                        </div>
+
+                    </div>
+                    </div>
+
+                    
+                    <div class="product-service">
+
+                        <div class="product-content">
+                            <h3>Web design</h3>
+                            <p>  I can create the layout and design of your website, making it visual appealing. As well as making it responsive to all screen size.<br>My Specialty:</p>
+
+                            <div class="mob-product-1 mob-child"><h4>
+                                UX(User Experience)
+                            </h4></div>
+
+                            <div class="mob-product-2 mob-child"><h4>
+                                UI(User Interface)
+                            </h4></div>
+                            
+                        </div>
+
+                         <div class="product-content-1">
+                             <h3>UX(User Experience)</h3>
+                             <p> I can improve user experience, by understanding what they need, what they value, their accessibility, and the limitations of users when visiting your app or website</p>
+                           
+                         </div>
+
+                        <div class="product-content-2">
+                            <h3>UI(User Interface)</h3>
+                            <p> By fully understanding the point of contact between your target users and the computer or the website/app itself, I can design an interactive interface that is efficient, friendly, and responsive. </p>
+                          
+                                    
+                        </div>
+
+                    </div>
+    </div>
+
+
+
+/* CSS SKills*/
+
+/* Services-section */
+
+.primary-services{
+    position: relative;
+    background-size: 120%;
+    color: white;
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-cover{
+    background-color: var(--clr-main);
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    height: calc(100% + 50px);
+    top: -50px;
+
+}
+
+.merketing-service{
+    width: 100vw;
+}
+
+.merketing-service h1{
+    padding: 100px 0px;
+    font-size: 125px;
+    position: relative;
+    left: 10vw;
+    color: var(--clr-adjacent-2);
+    pointer-events: none;
+}
+
+.merketing-service h1::before{
+    content: '';
+    width: 290px;
+    height: 4px;
+    background-color: var(--clr-adjacent);
+    position: absolute;
+    top: 175px;
+    left: -300px;
+    
+}
+
+.merketing-service h1::after{
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: #44c1ff;
+    position: absolute;
+    top: 175px;
+    left: -250px;
+    z-index: 2;
+    box-shadow: 2px 3px 20px #37e1ff;
+    animation: cyber 2.5s linear infinite;
+}
+
+@keyframes cyber{
+
+    from{
+        transform: translateX(0%);
+
+    }
+
+    to{
+        transform: translateX(500%);
+    }
+}
+
+.service-1{
+    width: 300px;
+    min-width: 300px;
+    background-color: transparent;
+    padding: 50px;
+    min-height: 350px;
+    transition: 800ms;
+    cursor: pointer;
+    position: relative;
+    left: 10vw;
+    z-index: 100;
+    display: flex;
+}
+
+
+.service-1 h3{
+    margin-top: 70px;
+    padding-bottom: 30px; 
+}
+
+.service-1:hover{
+    border-top: 3px solid var(--clr-adjacent);
+    width: 1000px;
+ 
+}
+
+.service-1:hover .service-content-1{
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+}
+
+.service-1:hover .service-content-1 img{
+    filter:grayscale(100%);
+}
+
+.service-1:hover .service-content-2{
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+}
+
+.service-1:hover .service-content-3{
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+}
+
+
+/*for mobile content */
+
+.service-content h4{
+    opacity: 0;
+
+}
+
+.mob-child{
+    opacity: 0;
+}
+
+.mob-product{
+    opacity: 0;
+}
+
+.mob-illustration{
+    opacity: 0;
+}
+
+.service-1:hover .service-content::after{
+    width: 320px;
+}
+
+.service-1 p{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.service-1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0;
+
+}
+
+.service-1 a:hover{
+    text-decoration: underline;
+}
+
+.service-content{
+    width: 300px;
+    background-color: #1d2431;
+    padding: 50px;
+    height: 350px;
+    transition: 500ms;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10 !important; 
+}
+
+.service-content::after{
+    content: '';
+    width: 50px;
+    height: 350px;
+    background-image: linear-gradient(45deg, var(--clr-main-sub), var(--clr-adjacent));;
+    position: absolute;
+    top:0;
+    left: -20px;
+    z-index: -11;
+    transition: 600ms;
+    opacity: 1;
+}
+
+.service-content:hover::after{
+    width: 320px;
+
+}
+
+.service-1:hover::after{
+    width: 300px;
+    opacity: 0;
+}
+
+.service-content-1{
+    width: 0px;
+    background-color: var(--clr-main-sub);
+    padding: 50px;
+    height: 0px;
+    transition: 500ms;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.service-content-1 a{
+    border: 2px solid var(--clr-adjacent);
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    transition: 300ms;
+}
+
+.service-content-1 a:hover{
+    background-color: var(--clr-main);
+    color: white !important;
+    text-decoration: none;
+}
+
+.service-content-1:hover{
+    transform: translateY(20px);
+    background-color: var(--clr-adjacent);
+    color: var(--clr-main);
+}
+.service-content-1:hover a{
+    border: 2px solid var(--clr-main);
+    color: var(--clr-main);
+}
+
+.service-content-2{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 350px;
+    top: 0px;
+    padding: 50px;
+    background: var(--clr-main-sub);
+    transition: 500ms;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/*-------- digital ADS-icon--------*/
+
+.service-content-1 img{
+    position: absolute;
+    width: 50px;
+    filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(140deg) brightness(102%) contrast(102%) !important;
+    aspect-ratio: 1;
+    transition: 500ms;
+    top: 6rem;
+}
+
+.service-content-1:hover img{
+    filter: invert(4%) sepia(60%) saturate(2411%) hue-rotate(210deg) brightness(114%) contrast(96%) !important;
+}
+
+/* ---------------------- */
+
+
+/*-------- logo design -icon--------*/
+
+.service-content-2 img{
+    position: absolute;
+    filter: invert(98%) sepia(0%) saturate(7%) hue-rotate(140deg) brightness(102%) contrast(102%);
+    width: 70px;
+    aspect-ratio: 1;
+    transition: 500ms;
+    top: 5.5rem;
+}
+
+.service-content-2:hover img{
+    filter: invert(4%) sepia(60%) saturate(2411%) hue-rotate(210deg) brightness(114%) contrast(96%);
+}
+
+
+.service-content-2 a{
+    border: 2px solid var(--clr-adjacent);
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    transition: 300ms;
+}
+
+/* ----------------------- */
+
+/* Hover Orange IMPORTANT */
+.service-content-2 a:hover{
+    background-color: orange;
+    color: var(--clr-main);
+    text-decoration: none;
+}
+
+.service-content-2:hover{
+    transform: translateY(20px);
+    background-color: var(--clr-adjacent);
+    color: var(--clr-main);
+}
+
+.service-content-2:hover a{
+    border: 2px solid var(--clr-main);
+    color: var(--clr-main);
+}
+
+
+/* Copy */
+
+.product-service h3{
+    margin-top: 70px;
+    padding-bottom: 30px; 
+}
+
+.product-service{
+    width: 300px;
+    background-color: transparent;
+    padding: 50px;
+    height: 350px;
+    transition: 800ms;
+    cursor: pointer;
+    position: absolute;
+    bottom: 150px;
+    right: 10vw;
+    z-index: 100;
+    display: flex;
+    
+}
+
+
+
+.product-service a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.product-service a:hover{
+    text-decoration: underline;
+}
+
+
+.product-service:hover{
+    border-top: 3px solid var(--clr-adjacent);
+    width: 1000px;
+}
+
+.product-content{
+    width: 300px;
+    background-color: #1d2431;
+    padding: 50px;
+    height: 350px;
+    transition: 600ms;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.product-content::after{
+    content: '';
+    width: 50px;
+    height: 350px;
+    background-image: linear-gradient(45deg, var(--clr-main-sub), var(--clr-adjacent));
+    position: absolute;
+    top:0;
+    right: -20px;
+    z-index: -11;
+    transition: 500ms;
+}
+
+.product-content p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.product-service:hover ::after{
+    width: 320px;
+    opacity: 1;
+
+}   
+
+.product-content-1{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 50px;
+    background: var(--clr-main-sub);
+    transition: 500ms;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.product-content-1:hover{
+    background-color: var(--clr-adjacent);
+    transform: translateY(20px);
+    color: var(--clr-main);
+}
+
+.product-content-1 p{
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+
+.product-content-1:hover a{
+    border: 2px solid var(--clr-main);
+    color: var(--clr-main);
+}
+
+.product-service:hover .product-content-1{
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+}
+
+
+.product-service:hover .product-content-2{
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+}
+
+.product-content-2{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    padding: 50px;
+    background: var(--clr-main-sub);
+    transition: 500ms;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+.product-content-2:hover{
+    background-color: var(--clr-adjacent);
+    transform: translateY(20px);
+    color: var(--clr-main);
+}
+
+.product-content-2 p{
+    position: relative;
+    bottom: 15px;
+    font-size: 14px;
+}
+
+.product-content-2 a{
+    border: 2px solid var(--clr-adjacent);
+    padding: 10px;
+    transition: 300ms;
+}
+
+.product-content-2 a:hover{
+    background-color: var(--clr-main);
+    text-decoration: none;
+    color: white !important;
+}
+
+.product-content-2:hover a{
+    border: 2px solid var(--clr-main);
+    color: var(--clr-main);
+}
+
+******* Logo Section Styles ***********
+
+
+/* Logo Design-Section */
+
+.primary-portfolio-section{
+    height: 100vh;
+    max-width: 100vw;
+    box-sizing: border-box;
+    z-index: -1;
+    background: var(--clr-newtxt2);
+    overflow: hidden;
+}
+
+.slideshow-container {
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 8%;
+    z-index: 100;
+    max-width: 100% !important;
+  }
+
+  .main-container-logo-section {
+    margin-top: 15%;
+  }
+
+  .logo-grid-wrapper {
+    max-width: 80vw;
+    height: 80vh;
+    margin: 7% auto;
+    display: flex !important;
+    gap: 2rem;
+    position: relative;
+
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides .content{
+    object-fit: cover;
+    max-width: 100%;
+    aspect-ratio: 2 / 1;
+    background-color: transparent;
+    
+  }
+
+  /* Text-container */
+  
+  .logo-text-container{
+    color: var(--clr-main-sub);
+    max-width: 500px;
+    opacity: .9;
+  }
+
+  .logo-text-container {
+    font-family: var(--font-par);
+    line-height: 1.5;
+  }
+
+  .logo-text-container h1{
+    margin-block: 0 30px;
+    font-size: 48px;
+  }
+
+  .omega1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .omega1 img{
+    width: 550px;
+    height: 550px;
+    transform: rotateX(30deg);
+    transition: 500ms;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+  }
+
+  .omega2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+  }
+
+  .omega2 img{
+    width: 550px;
+    height: 550px;
+    transform: rotateX(30deg);
+    transition: 500ms;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+  }
+
+
+  .omega3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .omega3 img{
+    width: 550px;
+    height: 550px;
+    transform: rotateX(30deg);
+    transition: 500ms;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+  }
+
+
+  /* omega4 */
+
+  .omega4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .omega4 img{
+    width: 550px;
+    height: 550px;
+    transform: rotateX(30deg);
+    transition: 500ms;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+  }
+
+
+  /*omega5 */
+
+  .omega5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .omega5 img{
+    width: 550px;
+    height: 550px;
+    transform: rotateX(30deg);
+    transition: 500ms;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+  }
+
+
+  /* omega6 */
+
+  .omega6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .omega6 img{
+    width: 550px;
+    height: 550px;
+    transform: rotateX(30deg);
+    transition: 500ms;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5);
+  }
+
+
+  /*border-bottom */
+
+  
+  /* Next and previous buttons */
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* next button" */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover */
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+    
+  /* The dots */
+  .dot {
+    position: relative;
+    bottom: 72px;
+    cursor: pointer;
+    height: 5px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: var(--clr-main-sub);
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: rgb(255, 173, 72);
+    height: 10px;
+  }
+
+  /* Fading animation */
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  /* Specialization */
+
+
+  <!-- Specialty Boundary -->
+
+<div class="col-3-grid-wrapper" id="col-3">
+
+    <div class="special-header">
+        <h1 class="col-3-txt">SPECIALIZATION</h1>
+    </div>
+
+    <div class="col-3-grid-container">
+
+  
+        <div class="col-1-grid-content col-3">
+            <img class="btn-col" src="" alt="">
+            <p>WEB DESIGN</p>
+            <p>I can design website through figma and develop it using code.</p>
+            <a href="" class="col-btn-1 col-btn"><img id="anchorbtn" src="right-arrow.png" alt=""></a>
+        </div>
+
+        <div class="col-2-grid-content col-3">
+            <img class="btn-col" src="" alt="">
+            <p>GRAPHIC DESIGN</p>
+            <p>Elevate your brand identity to reach its target audience</p>
+            <a href="" class="col-btn-2 col-btn"><img id="anchorbtn" src="right-arrow.png" alt=""></a>
+        </div>
+
+        <div class="col-3-grid-content col-3">
+            <img class="btn-col" src="" alt="">
+            <p>ILLUSTRATION</p>
+            <p>Create a character you want from scratch with its own appeal. </p>
+
+            <a href="" class="col-btn-3 col-btn"><img id="anchorbtn" src="right-arrow.png" alt=""></a>
+        </div>
+
+    </div>
+</div>
+
+/* Specialization Style */
+
+/* Specailty Section */
+
+.col-3-grid-wrapper {
+    max-width: 100vw;
+    min-height: 120vh;
+    background: var(--clr-main);
+}
+
+.col-3-grid-container {
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    place-content: center;
+    max-width: 80vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-block: 0 10%;
+    
+}
+
+.special-header {
+    color: white;
+    padding-block: 108px 72px; 
+    max-width: 100%;
+    text-align: center;
+}
+
+.special-header h1 {
+    font-size: 72px;
+}
+
+.col-3 {
+    background: var(--clr-adjacent-sub);
+    text-align: center;
+    color: white;
+    font-family: var(--font-par);
+    padding: 50px;
+    max-width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 96px 170px -82px rgba(183, 21, 71, .2);
+}
+
+.col-3 p {
+    opacity: .9;
+    line-height: 1.5;
+    font-size: 18px;    
+}
+
+.col-3 :nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.col-3 img {
+    width: 200px;
+    height: 230px;
+    background: orange;
+    margin-block: 0 20%;
+    transition: 500ms;
+}
+
+.col-3 > img:hover {
+    transform: scale(1.1);
+}
+
+.col-btn:visited {
+    color: black;
+}
+
+.col-btn {
+    width: 40px;
+    height: 40px;
+    background: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20%;
+    position: relative;
+    transition: 350ms;
+}
+
+.col-3 #anchorbtn {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.col-btn:hover {
+    background:rgb(255, 172, 71);
+}
+
+ 

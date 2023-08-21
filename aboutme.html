@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="aboutmestyle.css">
+    <link rel="icon" href="web-icon.png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar" id="nav">
+
+            <div id="main-logo">
+
+            <p class="main-logo"  onclick="location.href='index.html'"> arche. </p>
+            </div>
+
+            <img src="menu.png" class="menu-btn" alt="menu-bar">
+
+            <ul id="sidemenu">
+
+                <li><a href="index.html">home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="#" onclick="alert('Unavailable yet, Development in progress')">Projects</a></li> 
+                <div class="exit-btn-special">
+
+                   <img src="reject.png" alt="close-menu" class="reject-btn">
+                </div>  
+            </ul>             
+        
+        </div>
+
+<!---------Script for navbar---------->
+
+<script>
+
+            const ulist = document.querySelector("ul");
+            const menu = document.querySelector(".menu-btn");
+            const reject = document.querySelector(".reject-btn");
+
+            menu.onclick = function openmenu() {
+                ulist.style.height = "60vh";
+                ulist.style.opacity = "1";
+            }
+
+            reject.onclick = function closemenu() {
+                ulist.style.height = "0";
+                ulist.style.opacity = "0";
+            }
+
+</script>
+
+<!-- About Section -->
+
+    <div class="primary-about-section" id="about-bookmark">
+
+        <div class="about-content">
+
+        <div class="about-txt-name">
+            <p> ABOUT ME </p>
+            <p id="myName"> I'M ARCHE M. ANGANA
+            <br></p>
+            <span class="job-title">WEB DESIGNER & GRAPHIC DESIGNER</span>
+            
+                
+        </div>
+           
+        <div class="about-navigation"> 
+        
+            <p> I am currently 3rd year BSGD student at CEBU TECHNOLOGICAL UNIVERSITY Main - Campus and a aspiring web designer and graphic designer. With my knowledge, I strive to give you with the best service possible. 
+            </p>
+
+            <br>
+
+            <p> I have a desire for knowledge and a commitment to put that knowledge into action. My passion for understanding the complexities of web design/development and Graphic Design drives my belief that mindfulness in the workplace is key to success. I consider myself a "forever student," ready to learn new design approaches and techniques while keeping up with design trends. </p>
+
+            <br>
+           
+        </div>
+        </div>  
+        </div>
+    
+<!-- Software Skills Section-->
+
+<div class="new-skill-container">
+
+<div class="division-txt">
+    <h2> Software Expertise </h2>
+</div>
+
+<div class="division-wrapper">
+    <div class="icon"><img src="icon_Ai.png" alt="Adobe Illustrator"> <p> Adobe Illustrator </p></div>
+    <div class="icon"><img src="icon_Id.png" alt="Adobe Indesign"> <p> Adobe InDesign </p></div>
+    <div class="icon"><img src="icon_Ps.png" alt="Photoshop"> <p> Adobe Photoshop </p></div>
+    <div class="icon"><img src="icon_XD.png" alt=" Adobe XD"> <p> Adobe Xd </p></div>
+    <div class="icon"><img src="icon_VS.png" alt="Visual Studio Code"> <p> Visual Studio Code </p></div>         
+</div>
+
+</div>
+
+
+  <!-- My Skills Section -->
+            
+  <div class="skillContainer">
+    <h2 class="mainHeader"> MY SKILLSET </h2>
+
+    <div class="skillGrid">
+
+    
+       <div class="webDesign Grid">
+        <div class="header-wrapper">
+        <div class="oval"></div>
+        <h2 class="header-1 grid-header">WEB DESIGN</h2>
+        </div>
+        <p class="par-1 par">Planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.</p>
+       </div>
+
+
+       <div class="GraphicDesign Grid">
+        <div class="header-wrapper">
+        <div class="oval"></div>
+        <h2 class="header-2 grid-header">GRAPHIC DESIGN LAYOUT</h2> </div>
+
+        <p class="par-2 par">The art of communication, stylizing, and problem solving through the use of type and image.</p> 
+       </div>
+
+
+       <div class="HANDS-DRAW Grid">
+
+        <div class="header-wrapper">
+        <div class="oval"></div>
+        <h2 class="header-3 grid-header">HANDS DRAW</h2> </div>
+        <p class="par-3 par">Design process sketches. Digital art depicting character and the emotion they portray.</p>
+       </div>
+       
+
+       <div class="ADOBE-AFTER-EFFECTS Grid">
+        <div class="header-wrapper">
+        <div class="oval"></div>
+        <h2 class="header-4 grid-header">ADOBE AFTER EFFECTS</h2> </div>
+        <p class="par-4 par">Production, conceptualizing, animating videos and logo.</p>
+       </div>
+
+
+       <div class="htmlCSS Grid">
+        <div class="header-wrapper">
+        <div class="oval"></div>
+        <h2 class="header-5 grid-header">VALID HTML/CSS CODE</h2></div>
+        <p class="par-5 par">Develop website and applying design through code make it interactive and responsive.</p> 
+       </div>
+
+
+       <div class="VIDEO-EDTTING Grid">
+
+        <div class="header-wrapper">
+        <div class="oval"></div>
+        <h2 class="header-6 grid-header">VIDEO EDITTING</h2></div>
+
+        <p class="par-6 par">Great sense of Timing, Transition and Typography providing neat flow of video.</p>
+       </div>
+       </div>
+
+    </div>
+    </div>
+
+
+    <!-- Footer Section  -->
+
+<div class="footer-wrapper" id="contact-cut">
+
+    <div class="footer-child-container">
+
+        <div class="child-wrapper socials">
+            <img src="facebook.png" alt="facebook" onclick="location.href='#'" target="_blank">
+            <img src="linkedin.png" alt="twitter" onclick="location.href='#'" target="_blank">
+            <img src="behance.png" alt="behance" onclick="location.href='#'" target="_blank">
+            </div>
+
+        <div class="child-wrapper">
+            <div class="foot-txt">About</div>
+            <a href="">My Projects</a>
+            <a href="aboutme.html">Who I am?</a>
+            </div>
+            
+        <div class="child-wrapper">
+            <div class="foot-txt">Services</div>
+            <div class="srv">Web Design</div>
+            <div class="srv">Graphic Design</div>
+            <div class="srv">UX/UI Design</div>
+            </div>      
+        
+        <div class="child-wrapper contact">
+            <div class="foot-txt">Contact</div>
+            <div class="call"><img src="call.png" alt=""> <span>09984596370</span></div>
+            </div> 
+                 
+        </div>
+
+
+    <button id="upButton" class="up-button" onclick="scrollToTop()"><img src="top.png" alt=""></button>
+
+    <div class="copyright">
+        <p> &copy; 2023 Arche. All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

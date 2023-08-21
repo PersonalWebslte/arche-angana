@@ -1,0 +1,87 @@
+.images-holder {
+    position: absolute;
+    width: 40vw;
+    height: 80vh;
+    right: 0;
+    bottom: 0;
+}
+
+.holo {
+    width: 500px;
+    position: absolute;
+    right: 1rem;
+    bottom: 11rem;
+    
+}
+
+
+.slider-container {
+    background: transparent;
+    position: absolute;
+    right: 10.5rem;
+    top: 2rem;
+    width: 200px;
+    height: 220px;
+    white-space: wrap; 
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;   
+    margin: auto;
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    animation: up1 5s ease infinite alternate;      
+}
+
+.slider-container .child1 {
+    display: inline-block;
+    margin-right: 10px;
+    background: transparent;
+    width: 200px;
+    height: 200px;
+}
+
+.slider-container .child2 {
+    display: inline-block;
+    margin-right: 10px;
+    background: transparent;
+    width: 200px;
+    height: 200px;
+}
+
+.slider-container .child3 {
+    display: inline-block;
+    background:transparent;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    position: relative;
+    top: 10px;
+}
+
+body::after {
+    content: '';
+    background: #111e3d;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -18rem;
+    border-radius: 100% 0% 18% 82% / 26% 100% 0% 74%;
+}
+
+body::before {
+    content: '';
+    background: #0e1931;
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    display: block;
+    top: 20rem;
+    right: -18rem;
+    border-radius: 51% 49% 90% 10% / 34% 83% 17% 66%;
+    z-index: -2; 
+}
+

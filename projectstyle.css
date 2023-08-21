@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --clr-deep: #0e0a18;
+    --clr-deep-accent: #110c1f;
+    --clr-deep-adjacent: #0f0a1f;
+    --clr-light: #8062D6;
+    --clr-light-accent: #533d91;
+    --clr-ligther: #9288F8;
+    --clr-contrasts: #FFD2D7;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat.ttf); 
+}
+
+
+html, body {
+    position: relative;
+    overflow-x: hidden;
+    background: var(--clr-deep);
+    font-family: Montserrat;
+}
+
+/* Navigation */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    padding: 10px 20px 10px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    display: none;
+    background:var(--clr-adjacent-3);
+    opacity: .5;
+    width: 80vw;
+    height: 2px;
+    bottom: 0;
+    inset: 0 0 -96px 0;
+    margin: auto;
+    
+}
+
+.navbar .main-logo{
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    font-size: 30px;
+    font-family: poppins;
+}
+
+
+#sidemenu {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-btn{
+    display: none;
+}
+
+.reject-btn{
+    display: none;
+}
+
+
+#sidemenu li{
+    display: inline-block;
+    cursor: pointer !important;
+    overflow: hidden;
+}
+
+.main-logo{
+    opacity: 1;
+    position: relative;
+
+}
+
+#sidemenu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 10px 20px;
+    display: block;
+    transition: 250ms;   
+    position: relative;
+    text-transform: capitalize;
+    border-radius: 100px;
+    z-index: 2;
+}
+
+#sidemenu li a:active{
+    transform: translateY(20px);
+}
+
+#sidemenu li .concon{
+    border: 2px solid var(--clr-adjacent-3);
+    border-radius: 30px;
+
+}
+
+#sidemenu li a::before{
+    content: '';
+    position: absolute; 
+    width: 10px;
+    height: 10px;
+    background-color: var(--clr-contrasts);
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    transition: 600ms;
+    z-index: -1;
+    opacity: 0;
+}
+
+#sidemenu li:hover a::before{
+    opacity: 1;
+    transform: scale(16);
+}
+
+#sidemenu li:hover a {
+    color: var(--clr-deep);
+}
+
+.navbar .side-logo{
+    position: relative;
+    bottom: 16px;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* Filtered Gallery */
+
+section {
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--clr-deep);
+}
+
+section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 0 20px;
+}
+
+section ul li {
+    list-style: none;
+    background: #eee;
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+section ul li.active {
+    background: rgb(29, 92, 187);
+    color: #fff;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product .itemBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    display: block;
+}
+
+.product .itemBox.hide {
+    display: none;
+}
+
+.product .itemBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+
+    html, body {
+        position: relative;
+        overflow-x: hidden;
+
+    }
+
+    #sidemenu{
+
+        background: var(--clr-light);
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        width: 200px;
+        padding: 20px;
+        height: 0;
+        z-index: 9;
+        position: absolute;
+        right: 0 !important;
+        top: 50px;
+        transition: 350ms;
+        border-radius: 30px;
+        opacity: 0;
+    }
+    
+
+    #sidemenu li{
+        display: block;
+    }
+
+    #sidemneu li a{
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .navbar .main-logo{
+        position: absolute;
+        inset: 20px 0 0 0;
+        margin: auto;
+    }
+
+    .navbar{
+        background: var(--clr-deep);
+        height: 80px;
+        position: fixed;
+        top: 0;
+        z-index: 9999999 !important;
+    }
+
+    .navbar .menu-btn{
+
+        width: 30px;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        cursor: pointer;
+        display: block;
+        filter: invert(93%) sepia(0%) saturate(7467%) hue-rotate(70deg) brightness(107%) contrast(110%);
+        z-index: 10;
+    }
+
+    .reject-btn{
+        color:var(--clr-deep);
+        display: block;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: auto;
+        background: white;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+    }
+
+    section {
+        position: relative;
+        top: 300px;
+    }
+}
+
+
+

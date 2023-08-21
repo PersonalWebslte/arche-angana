@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Project page</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="icon" href="web-icon.png">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+
+    <div class="navbar" id="nav">
+
+        <div id="main-logo">
+
+        <p class="main-logo"  onclick="location.href='index.html'"> arche. </p>
+        </div>
+
+        <img src="menu.png" class="menu-btn" alt="menu-bar">
+
+        <ul id="sidemenu">
+
+            <li><a href="index.html">home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact-cut">Get in touch </a></li>
+     
+            <div class="exit-btn-special">
+
+               <img src="reject.png" alt="close-menu" class="reject-btn">
+            </div>  
+        </ul>             
+    
+    </div>
+
+
+<!-- Filtered Gallery_projects -->
+    <section> 
+        <ul>
+        <li class="list active" data-filter="all"> All </li>
+        <li class="list" data-filter="webdesign"> Webdesign </li>
+        <li class="list" data-filter="graphicdesign"> Graphic Design </li>
+        <li class="list" data-filter="identity"> Brand Identity </li>
+        <li class="list" data-filter="prototype"> Prototypes </li>
+        </ul>
+        
+        <div class="product">
+        
+        <div class="itemBox" data-item="webdesign"><img src="PhoneWEb.png" alt=""></div>
+        <div class="itemBox" data-item="graphicdesign"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="identity"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="prototype"><img src="#" alt=""></div>
+        
+        
+        <div class="itemBox" data-item="webdesign"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="graphicdesign"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="identity"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="prototype"><img src="#" alt=""></div>
+        
+        
+        <div class="itemBox" data-item="webdesign"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="graphicdesign"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="identity"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="prototype"><img src="#" alt=""></div>
+        
+        
+        <div class="itemBox" data-item="webdesign"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="graphicdesign"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="identity"><img src="#" alt=""></div>
+        <div class="itemBox" data-item="prototype"><img src="#" alt=""></div>
+        
+        </div>
+        </section>
+
+<!---------Script for navbar---------->
+
+<script>
+    const ulist = document.querySelector("ul");
+    const menu = document.querySelector(".menu-btn");
+    const reject = document.querySelector(".reject-btn");
+
+    menu.onclick = function openmenu() {
+        ulist.style.height = "40vh";
+        ulist.style.opacity = "1";
+    }
+
+    reject.onclick = function closemenu() {
+        ulist.style.height = "0";
+        ulist.style.opacity = "0";
+    }
+</script>
+
+<!-- Filtered Script -->
+<script>
+
+    let list = document.querySelectorAll('.list');
+    let itemBox = document.querySelectorAll('.itemBox');
+        
+    for(let i = 0; i < list.length; i++) {
+    list[i].addEventListener('click', function(){
+
+    for(let j = 0; j < list.length; j++){
+    list[j].classList.remove('active');
+    }
+    this.classList.add('active');
+        
+    let dataFilter = this.getAttribute('data-filter');
+        
+    for(let k = 0; k < itemBox.length; k++) {
+    itemBox[k].classList.remove('active');
+    itemBox[k].classList.add('hide');
+        
+    if(itemBox[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
+    itemBox[k].classList.remove('hide');
+    itemBox[k].classList.add('active');
+                        }
+                    }
+                })
+            }
+        
+</script>
+     
+</body>
+</html>
